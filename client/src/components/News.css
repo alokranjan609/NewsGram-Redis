@@ -1,0 +1,75 @@
+.header {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #d32f2f, #e57373); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 40px; /* More spacing below the header */
+    transition: all 0.3s ease;
+}
+
+.header:hover {
+    transform: translateY(-5px); /* Lifting effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.inputbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px; /* Increased padding for a larger input */
+    margin: 0 auto; /* Centering the inputbar */
+    border: 2px solid #d32f2f; /* Red border */
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    color: #d32f2f; /* Red text */
+    width: 50%; /* Width of inputbar adjusted */
+}
+
+.inputbar:focus {
+    border-color: #b71c1c; /* Darker red on focus */
+    box-shadow: 0 0 10px rgba(211, 47, 47, 0.2); /* Red shadow */
+    transform: scale(1.05); /* Slightly larger on focus */
+}
+
+.submitbtn {
+    margin-top: 20px;
+    padding: 12px 30px; /* Increased padding */
+    background-color: #d32f2f; /* Red background */
+    border: none;
+    border-radius: 10px;
+    color: white; /* White text */
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto; /* More flexible button width */
+}
+
+.submitbtn:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow */
+    transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+.submitbtn:active {
+    transform: scale(0.98); /* Slight reduction in size when clicked */
+}
+
+body {
+    background-color: #f9f9f9; /* Softer background color */
+    font-family: 'Poppins', sans-serif;
+    color: #d32f2f; /* Red text */
+    text-align: center; /* Centering content */
+    margin: 0;
+    padding: 0;
+}

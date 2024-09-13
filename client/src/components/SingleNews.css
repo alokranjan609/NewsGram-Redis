@@ -1,0 +1,64 @@
+.news-card {
+    padding: 20px;
+    border: 2px solid #d32f2f; /* Red inner border */
+    outline: 4px solid #ffffff; /* White outer border */
+    background: linear-gradient(135deg, #f44336, #e57373); /* Gradient background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    border-radius: 15px; /* More rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transform: scale(1); /* Default scale */
+}
+
+.news-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+img {
+    border: 2px solid #ffffff; /* White border for contrast */
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Slightly rounded image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Image shadow */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+img:hover {
+    transform: scale(1.03); /* Slight image zoom on hover */
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px; /* Improved spacing for modern look */
+    text-transform: uppercase; /* Capitalized titles */
+}
+
+p {
+    color: #ffffff; /* White text for readability */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 25px; /* Fully rounded button */
+    color: #d32f2f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #d32f2f; /* Red on hover */
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
