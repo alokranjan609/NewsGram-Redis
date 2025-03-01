@@ -8,7 +8,7 @@ function News() {
     const [newsList,setNewsList]=useState([]);
     const [query,setquery]=useState('india')
     const queryInputRef=useRef(null);
-    const url=`http://localhost:5000/news/${query}`; // Use your own backend URL
+    const url=`https://newsgram-backend.onrender.com/news/${query}`; // Use your own backend URL
 
     useEffect(()=>
     {
