@@ -18,6 +18,7 @@ const corsOptions ={
 
 
 // GNews API key and URL
+
 const GNEWS_API_KEY = process.env.GNEWS_API_KEY;
 const BASE_URL = 'https://gnews.io/api/v4/search';
 
@@ -33,10 +34,8 @@ const cache = async(req, res, next) => {
     if (err) throw err;
 
     if (data) {
-      console.log('Cache hit');
       res.send(JSON.parse(data));
     } else {
-      console.log('Cache miss');
       next();
     }
   });
@@ -57,7 +56,6 @@ app.get('/news/:query', cache, async (req, res) => {
 
     res.send(newsData);
   } catch (error) {
-    console.error(error);
     res.status(500).send('Server error');
   }
 });
