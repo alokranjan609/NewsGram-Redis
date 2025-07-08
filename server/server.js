@@ -9,11 +9,11 @@ require('dotenv').config();
 
 const app = express();
 const port = 5000;
-const corsOptions ={
-  origin:'*', 
-  credentials:true,            //access-control-allow-credentials:true
-  optionSuccessStatus:200
-}
+const corsOptions = {
+  origin: 'http://localhost:3000', // or your frontend URL
+  credentials: true,
+  optionSuccessStatus: 200
+};
 
 
 
