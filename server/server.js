@@ -10,7 +10,7 @@ require('dotenv').config();
 const app = express();
 const port = 5000;
 const corsOptions = {
-  origin: 'http://localhost:3000', // your frontend URL
+  origin: 'https://newsgram-redis.onrender.com', // your frontend URL
   credentials: true,
   optionsSuccessStatus: 200 // ✅ corrected property name
 };
