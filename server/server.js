@@ -10,10 +10,11 @@ require('dotenv').config();
 const app = express();
 const port = 5000;
 const corsOptions = {
-  origin: 'http://localhost:3000', // or your frontend URL
+  origin: 'http://localhost:3000', // your frontend URL
   credentials: true,
-  optionSuccessStatus: 200
+  optionsSuccessStatus: 200 // ✅ corrected property name
 };
+
 
 
 
